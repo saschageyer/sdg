@@ -34,16 +34,16 @@ a {
 }
 
 .contact {
-  user-select: none;
-  position: absolute;
   width: 100%;
-  list-style-type: none;
+  max-width: 400px;
   margin: 17px 0;
   padding: 0;
   bottom: 0;
+  user-select: none;
+  position: absolute;
   display: flex;
   justify-content: space-evenly;
-  max-width: 400px;
+  list-style-type: none;
 
   &__svg {
     height: 45px;

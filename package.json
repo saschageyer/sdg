@@ -1,11 +1,12 @@
 {
-  "name": "sascha-geyer",
+  "name": "sdg",
   "version": "1.0.0",
   "description": "Sascha Geyer's Website.",
   "scripts": {
     "lint": "eslint src",
     "build": "cross-env NODE_ENV=production webpack --config webpack/webpack.config.prod.js --colors",
-    "start": "webpack-dev-server --open --config webpack/webpack.config.dev.js --host 192.168.0.174 --port 8080"
+    "start": "webpack-dev-server --open --config webpack/webpack.config.dev.js --host 192.168.0.174 --port 8080",
+    "serve-build": "cd build && python -m SimpleHTTPServer 8080"
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
