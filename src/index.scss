@@ -1,0 +1,58 @@
+@font-face {
+  font-family: din;
+  src: url('../public/DINWebPro.woff') format('woff');
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #123;
+  font-family: din, monospace;
+}
+
+a {
+  color: inherit;
+}
+
+#particles {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#text {
+  padding: 0 30px;
+  font-size: 22px;
+  line-height: 1.5em;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+}
+
+.contact {
+  user-select: none;
+  position: absolute;
+  width: 100%;
+  list-style-type: none;
+  margin: 17px 0;
+  padding: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 400px;
+
+  &__svg {
+    height: 45px;
+    width: 45px;
+    fill: #fff;
+    transition: all 0.1s;
+
+    &:hover {
+      transform: scale(1.25);
+    }
+  }
+}
